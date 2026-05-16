@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RTC Guía y Protocolos de Salud - Yeison Ramírez</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --rtc-primary: #3FBDA8;
+        --rtc-coral: #E87461;
+        --rtc-bg: #FFFFFF;
+        --rtc-text: #1A1A1A;
+        --rtc-gray: #F5F5F7;
+      }
+      body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        background: var(--rtc-bg);
+        color: var(--rtc-text);
+        -webkit-tap-highlight-color: transparent;
+      }
+      .bg-rtc-primary { background-color: var(--rtc-primary); }
+      .text-rtc-primary { color: var(--rtc-primary); }
+      .border-rtc-primary { border-color: var(--rtc-primary); }
+      
+      .glass {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+      }
+      
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+      
+      /* 3D Card Effects Premium */
+      .card-3d {
+        transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        transform: perspective(1200px) rotateX(0) rotateY(0);
+        box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+      }
+      .card-3d:hover {
+        transform: perspective(1200px) translateY(-20px) rotateX(3deg);
+        box-shadow: 0 50px 100px -20px rgba(63, 189, 168, 0.15);
+        border-color: rgba(63, 189, 168, 0.4);
+      }
+      .card-3d:active {
+        transform: perspective(1200px) scale(0.95);
+      }
+
+      @keyframes custom-pulse {
+        0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+        70% { transform: scale(1.1); box-shadow: 0 0 0 25px rgba(37, 211, 102, 0); }
+        100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+      }
+      .pulse-wa {
+        animation: custom-pulse 3s infinite;
+      }
+
+      @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-12px); }
+        100% { transform: translateY(0px); }
+      }
+      .floating {
+        animation: float 6s ease-in-out infinite;
+      }
+
+      .hover-scale { transition: transform 0.4s ease; }
+      .hover-scale:hover { transform: scale(1.04); }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+  }
+}
+</script>
+  <script type="module" crossorigin src="./assets/index-P8bPXLAF.js"></script>
+</head>
+  <body>
+    <div id="root"></div>
+</body>
+</html>
